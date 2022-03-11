@@ -13,8 +13,8 @@
         public IFlyable FlyBehavior { get; private set; }
         public ISwimable SwimBehavior { get; private set; }
 
-        public void SetFlyable(IFlyable flyBehavior) => FlyBehavior = flyBehavior;
-        public void SetSwimable(ISwimable swimBehavior) => SwimBehavior = swimBehavior;
+        public void SetFlyBehavior(IFlyable flyBehavior) => FlyBehavior = flyBehavior;
+        public void SetSwimBehavior(ISwimable swimBehavior) => SwimBehavior = swimBehavior;
 
         public abstract void Display();
     }

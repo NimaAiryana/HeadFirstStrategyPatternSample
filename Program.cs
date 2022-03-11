@@ -15,7 +15,7 @@ new RubberDuck().Display();
 
 var woodenDuck = new WoodenDuck();
 woodenDuck.Display();
-woodenDuck.SetFlyable(new NowCanFly()); // runtime changeability
-woodenDuck.SetSwimable(new NowCanSwim()); // runtime changeability
+woodenDuck.SetFlyBehavior(new NowCanFly()); // runtime changeability
+woodenDuck.SetSwimBehavior(new NowCanSwim()); // runtime changeability
 woodenDuck.Display();
 // /ducks
