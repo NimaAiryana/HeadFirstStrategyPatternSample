@@ -12,8 +12,8 @@ namespace HeadFirstStrategyPatternSample.Ducks
         public override void Display()
         {
             Console.WriteLine($"{Name}:");
-            Flyable.Fly();
-            Swimable.Swim();
+            FlyBehavior.Fly();
+            SwimBehavior.Swim();
             Console.WriteLine();
         }
     }

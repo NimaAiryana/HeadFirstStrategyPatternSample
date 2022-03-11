@@ -2,19 +2,19 @@
 {
     public abstract class ADuck
     {
-        protected ADuck(string name, IFlyable flyable, ISwimable swimable)
+        protected ADuck(string name, IFlyable flyBehavior, ISwimable swimBehavior)
         {
             Name = name;
-            Flyable = flyable;
-            Swimable = swimable;
+            FlyBehavior = flyBehavior;
+            SwimBehavior = swimBehavior;
         }
 
         public string Name { get; private set; }
-        public IFlyable Flyable { get; private set; }
-        public ISwimable Swimable { get; private set; }
+        public IFlyable FlyBehavior { get; private set; }
+        public ISwimable SwimBehavior { get; private set; }
 
-        public void SetFlyable(IFlyable flyable) => Flyable = flyable;
-        public void SetSwimable(ISwimable swimable) => Swimable = swimable;
+        public void SetFlyable(IFlyable flyBehavior) => FlyBehavior = flyBehavior;
+        public void SetSwimable(ISwimable swimBehavior) => SwimBehavior = swimBehavior;
 
         public abstract void Display();
     }
